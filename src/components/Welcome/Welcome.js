@@ -17,6 +17,10 @@ const Welcome = () => {
           new things everyday. Besides spending hours coding, other things I
           love include soccer, working out, reading and hiking.
         </p>
+        <p className="welcome-paragraph-2">
+          * This porftolio will be under constant improvement as I continue to
+          learn more skills and technology.
+        </p>
       </div>
       <Footer />
     </div>

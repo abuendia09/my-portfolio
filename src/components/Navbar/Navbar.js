@@ -22,13 +22,9 @@ const Navbar = () => {
     setShowNav(false);
   };
 
-  const handleClickAway = () => {
-    setShowNav(false);
-  };
-
   return (
     <nav className={showNav ? "navbar-container" : "navbar-container active"}>
-      <NavLink to="/" className="navbar-logo">
+      <NavLink to="/my-portfolio" className="navbar-logo">
         <TbLetterA />
       </NavLink>
       <div className="menu-icon" onClick={handleClick}>
@@ -37,7 +33,7 @@ const Navbar = () => {
       <ol className={click ? "nav-menu active" : "nav-menu"}>
         <li className="nav-link-items">
           <NavLink
-            to="/about"
+            to="/my-portfolio/about"
             className="nav-link"
             onClick={handleCloseMobileMenu}
           >
