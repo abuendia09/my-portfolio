@@ -1,0 +1,32 @@
+@import "../../var";
+
+.welcome-container {
+  height: 100vh;
+  padding: 15vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: left;
+
+  .welcome-header {
+    font-family: $font-secondary;
+    color: $text-secondary;
+    font-weight: 100;
+    padding: 2rem 0;
+  }
+
+  .welcome-name {
+    font-family: $font-primary;
+    color: $text-primary;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 2rem;
+  }
+
+  .welcome-paragraph {
+    font-family: $font-primary;
+    color: $text-primary;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+}

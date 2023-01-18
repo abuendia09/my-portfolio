@@ -1,0 +1,59 @@
+@import "../../var";
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+
+    a {
+      color: $text-primary;
+      padding: 0.7rem;
+      padding-bottom: 1.5rem;
+      @include transition-ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: $text-secondary;
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    transform: rotate(90deg) translate(-3rem, -5rem);
+    color: $secondary-color;
+    letter-spacing: 0.1em;
+    font-family: $font-secondary;
+    font-weight: 100;
+    font-size: 12px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: $secondary-color;
+      transform: rotate(90deg) translate(1rem, -5rem);
+    }
+    .footer-copyright {
+      transform: rotate(0deg) translate(-3.5rem, 4.3rem);
+    }
+  }
+}

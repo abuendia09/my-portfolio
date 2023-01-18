@@ -1,0 +1,89 @@
+@import "../../var";
+
+.about-container {
+  height: 100vh;
+  padding: 15vh;
+
+  .about-header {
+    align-items: center;
+    text-align: left;
+    padding-bottom: 2rem;
+    font-size: 36px;
+    font-family: $font-primary;
+    color: $text-primary;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    &::before {
+      counter-increment: section 1;
+      content: "0" counter(section) ".";
+      font-family: $font-secondary;
+      color: $secondary-color;
+      font-size: 27px;
+      letter-spacing: -0.05em;
+      padding-right: 0.5em;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 240px;
+      height: 1px;
+      margin: 5px;
+      background-color: $secondary-color;
+    }
+  }
+
+  .about-content {
+    display: flex;
+    text-align: left;
+
+    .about-inner {
+      padding-right: 20px;
+    }
+
+    .about-paragraph {
+      color: $text-primary;
+      font-family: $font-primary;
+      font-size: 16px;
+      font-weight: 300;
+      padding-bottom: 1rem;
+      letter-spacing: 0.5px;
+
+      a {
+        cursor: pointer;
+        color: $secondary-color;
+        text-decoration: none;
+      }
+    }
+
+    .stack-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px 10px;
+      list-style: none;
+      color: $text-primary;
+      font-weight: 100;
+      font-family: $font-secondary;
+      font-size: 13px;
+
+      li {
+        margin: 8px 0;
+
+        &::before {
+          content: "»";
+          padding-right: 10px;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  .profile-image {
+    height: 40vh;
+    box-shadow: 8px 8px 1px 1px #129b2e;
+
+    &:hover {
+      box-shadow: 15px 15px 1px 1px #129b2e;
+    }
+  }
+}

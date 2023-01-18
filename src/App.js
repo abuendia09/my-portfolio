@@ -1,14 +1,20 @@
-import "./App.css";
+//imports
+import { Routes, Route } from "react-router-dom";
 
-//images
-import profileImage from "./assets/image0.jpeg";
+//styles
+import "./_app.scss";
+
+//components
+import Welcome from "./components/Welcome/Welcome";
+import About from "./components/About/About";
 
 function App() {
   return (
     <div className="App">
-      <h1>My Portfolio</h1>
-      <h2>Author: Adrie Buendia</h2>
-      <img className="App-logo" src={profileImage} alt="Profile" />
+      <Routes>
+        <Route exact path="/" element={<Welcome />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
