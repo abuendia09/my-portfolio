@@ -4,7 +4,6 @@ import React from "react";
 import "../../_var.scss";
 import "./_footer.scss";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
-import { NavLink, Link } from "react-router-dom";
 
 const Footer = () => {
   return (
