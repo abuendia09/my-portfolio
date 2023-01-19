@@ -53,7 +53,7 @@ const About = () => {
               {stack && stack.map((stack, i) => <li key={i}>{stack}</li>)}
             </ul>
           </div>
-          <div>
+          <div className="img-wrapper">
             <img
               className="profile-image"
               src={require("../../assets/image0.jpeg")}

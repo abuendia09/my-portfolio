@@ -1,9 +1,9 @@
 @import "../../var";
 
-.navbar-container.active {
-  background-color: transparent;
-  @include transition-ease;
-}
+// .navbar-container.active {
+//   // background-color: transparent;
+//   @include transition-ease;
+// }
 
 .navbar-container {
   position: fixed;
@@ -15,7 +15,6 @@
   justify-content: space-between;
   z-index: 1;
   padding: 0 2rem;
-  @include transition-ease;
 
   .navbar-logo {
     color: $secondary-color;
@@ -66,7 +65,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @include media-md {
     .menu-icon {
       display: block;
       position: absolute;

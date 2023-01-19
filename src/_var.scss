@@ -9,14 +9,27 @@ $text-secondary: #39ff14;
 $font-primary: "Poppins", sans-serif;
 $font-secondary: "Roboto Mono", sans-serif;
 
-@function set-text-color($color) {
-  @if (lightness($color) > 40%) {
-    @return #000;
-  } @else {
-    @return #fff;
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+@mixin media-sm {
+  @media screen and (max-width: 480px) {
+    @content;
   }
 }
 
-@mixin transition-ease {
-  transition: all 0.5s ease-in-out;
+@mixin media-md {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
 }
