@@ -29,7 +29,12 @@ $font-secondary: "Roboto Mono", sans-serif;
   }
 }
 @mixin media-xl {
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1600px) and (min-width: 1025px) {
+    @content;
+  }
+}
+@mixin media-xxl {
+  @media screen and (min-width: 1601px) {
     @content;
   }
 }

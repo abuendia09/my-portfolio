@@ -101,4 +101,40 @@
       }
     }
   }
+  @include media-md {
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.5rem;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      background-color: $primary-color;
+      flex-direction: column;
+      width: 70%;
+      height: 100vh;
+      position: absolute;
+      top: 60px;
+      right: -100%;
+      opacity: 0;
+      @include transition-ease;
+    }
+
+    .nav-menu.active {
+      background-color: $tercary-color;
+      right: 0;
+      opacity: 1;
+      @include transition-ease;
+      z-index: 2;
+
+      .nav-link-items {
+        padding: 2rem 0;
+      }
+    }
+  }
 }
