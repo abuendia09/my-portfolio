@@ -3,10 +3,11 @@
 .about-container {
   height: 100vh;
   padding: 15vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: left;
 
   .about-header {
-    align-items: center;
-    text-align: left;
     padding-bottom: 2rem;
     font-size: 36px;
     font-family: $font-primary;
@@ -36,7 +37,6 @@
 
   .about-content {
     display: flex;
-    text-align: left;
 
     .about-inner {
       padding-right: 20px;
@@ -77,15 +77,60 @@
         }
       }
     }
+    .profile-image {
+      padding: 0 10px;
+      height: 40vh;
+
+      box-shadow: 0px 0px 30px -15px #129b2e;
+
+      &:hover {
+        box-shadow: 0px 0px 30px -5px #129b2e;
+      }
+    }
   }
-}
-.profile-image {
-  padding: 0 10px;
-  height: 40vh;
 
-  box-shadow: 0px 0px 30px -15px #129b2e;
+  @include media-sm {
+    .about-header {
+      padding-bottom: 0.5rem;
+      font-size: 18px;
+      letter-spacing: 0.5px;
 
-  &:hover {
-    box-shadow: 0px 0px 30px -5px #129b2e;
+      &::before {
+        font-size: 14px;
+      }
+
+      &::after {
+        width: 120px;
+        margin: 2px;
+      }
+    }
+
+    .about-content {
+      .about-inner {
+        .about-paragraph {
+          font-size: 10px;
+          padding-bottom: 0.5rem;
+          letter-spacing: normal;
+        }
+        .stack-list {
+          gap: 0px 3px;
+          font-size: 10px;
+
+          li {
+            margin: 4px 0;
+
+            &::before {
+              padding-right: 5px;
+            }
+          }
+        }
+      }
+      .profile-image {
+        position: relative;
+        height: 20vh;
+        top: 450px;
+        right: 200px;
+      }
+    }
   }
 }
