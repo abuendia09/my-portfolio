@@ -23,52 +23,54 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={showNav ? "navbar-container" : "navbar-container active"}>
-      <NavLink to="/my-portfolio" className="navbar-logo">
-        <TbLetterA />
-      </NavLink>
-      <div className="menu-icon" onClick={handleClick}>
-        {click ? <GrClose /> : <FiMenu />}
-      </div>
-      <ol className={click ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-link-items">
-          <NavLink
-            to="/my-portfolio/about"
-            className="nav-link"
-            onClick={handleCloseMobileMenu}
-          >
-            About
-          </NavLink>
-        </li>
-        <li className="nav-link-items">
-          <NavLink
-            href="/my-portfolio"
-            className="nav-link"
-            onClick={handleCloseMobileMenu}
-          >
-            Experience
-          </NavLink>
-        </li>
-        <li className="nav-link-items">
-          <NavLink
-            href="/my-portfolio"
-            className="nav-link"
-            onClick={handleCloseMobileMenu}
-          >
-            Work
-          </NavLink>
-        </li>
-        <li className="nav-link-items">
-          <NavLink
-            href="/my-portfolio"
-            className="nav-link"
-            onClick={handleCloseMobileMenu}
-          >
-            Contact
-          </NavLink>
-        </li>
-      </ol>
-    </nav>
+    <div>
+      <nav className={showNav ? "navbar-container" : "navbar-container active"}>
+        <NavLink to="/my-portfolio" className="navbar-logo">
+          <TbLetterA />
+        </NavLink>
+        <div className="menu-icon" onClick={handleClick}>
+          {click ? <GrClose /> : <FiMenu />}
+        </div>
+        <ol className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-link-items">
+            <NavLink
+              to="/my-portfolio/about"
+              className="nav-link"
+              onClick={handleCloseMobileMenu}
+            >
+              About
+            </NavLink>
+          </li>
+          <li className="nav-link-items">
+            <NavLink
+              href="/my-portfolio"
+              className="nav-link"
+              onClick={handleCloseMobileMenu}
+            >
+              Experience
+            </NavLink>
+          </li>
+          <li className="nav-link-items">
+            <NavLink
+              href="/my-portfolio"
+              className="nav-link"
+              onClick={handleCloseMobileMenu}
+            >
+              Work
+            </NavLink>
+          </li>
+          <li className="nav-link-items">
+            <NavLink
+              href="/my-portfolio"
+              className="nav-link"
+              onClick={handleCloseMobileMenu}
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ol>
+      </nav>
+    </div>
   );
 };
 

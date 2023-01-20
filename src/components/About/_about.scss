@@ -2,7 +2,7 @@
 
 .about-container {
   height: 100vh;
-  padding: 10vh 12vh;
+  padding: 7vh 10vh;
   overflow: hidden;
   align-items: center;
   text-align: left;
@@ -37,7 +37,6 @@
 
   .about-content {
     display: flex;
-
     .about-inner {
       padding-right: 5px;
 
@@ -129,7 +128,7 @@
         position: relative;
         height: 15vh;
         top: 450px;
-        right: 200px;
+        right: 160px;
       }
     }
   }

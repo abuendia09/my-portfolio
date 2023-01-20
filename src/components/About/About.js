@@ -24,8 +24,8 @@ const About = () => {
 
   return (
     <div>
+      <Navbar />
       <div className="about-container">
-        <Navbar />
         <h2 className="about-header">About Me</h2>
         <div className="about-content">
           <div className="about-inner">
