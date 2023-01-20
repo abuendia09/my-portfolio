@@ -19,12 +19,12 @@ $font-secondary: "Roboto Mono", sans-serif;
 }
 
 @mixin media-md {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) and (min-width: 481px) {
     @content;
   }
 }
 @mixin media-lg {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
     @content;
   }
 }

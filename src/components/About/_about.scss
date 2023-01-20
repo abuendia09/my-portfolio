@@ -39,7 +39,7 @@
     display: flex;
 
     .about-inner {
-      padding-right: 20px;
+      padding-right: 5px;
 
       .about-paragraph {
         color: $text-primary;
@@ -127,9 +127,25 @@
       }
       .profile-image {
         position: relative;
-        height: 20vh;
+        height: 15vh;
         top: 450px;
         right: 200px;
+      }
+    }
+  }
+
+  @include media-md {
+    .about-content {
+      .profile-image {
+        height: 20vh;
+      }
+    }
+  }
+
+  @include media-lg {
+    .about-content {
+      .profile-image {
+        height: 25vh;
       }
     }
   }
