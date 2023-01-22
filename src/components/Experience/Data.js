@@ -2,7 +2,7 @@ export default [
   [
     {
       company: "DevMountain",
-      position: "Software Developer In Training",
+      position: "Software Developer",
       date: "April - December 2022",
       info: {
         one: "8 months of intesive training in a variety of modern programming languages and technologies",

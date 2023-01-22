@@ -68,6 +68,7 @@
 
         @include media-sm {
           border-style: none none solid none;
+          margin-right: 0;
         }
 
         &:hover {
