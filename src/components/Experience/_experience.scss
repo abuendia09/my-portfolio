@@ -1,0 +1,133 @@
+@import "../../var";
+
+.experience-container {
+  height: 100vh;
+  padding: 8.5vh 10vh;
+  overflow: hidden;
+
+  @include media-sm {
+    padding: 7vh 8vh;
+  }
+
+  @include media-md {
+    padding: 8vh 7vh;
+  }
+
+  .experience-header {
+    padding-bottom: 2rem;
+    font-size: 36px;
+    font-family: $font-primary;
+    color: $text-primary;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    align-items: left;
+
+    &::before {
+      counter-increment: section 2;
+      content: "0" counter(section) ".";
+      font-family: $font-secondary;
+      color: $secondary-color;
+      font-size: 27px;
+      letter-spacing: -0.05em;
+      padding-right: 0.5em;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 270px;
+      height: 1px;
+      margin: 5px;
+      background-color: $secondary-color;
+    }
+  }
+  .experience-content {
+    display: flex;
+    flex-wrap: nowrap;
+
+    @include media-sm {
+      flex-wrap: wrap;
+    }
+
+    .experience-btns {
+      @include media-sm {
+        display: flex;
+        overflow-x: auto;
+      }
+      button {
+        background-color: transparent;
+        border-style: none none none solid;
+        border-color: $tercary-color;
+        border-width: 1px;
+        margin-right: 15px;
+        padding: 18px 10px;
+        width: 150px;
+        display: block;
+        cursor: pointer;
+
+        @include media-sm {
+          border-style: none none solid none;
+        }
+
+        &:hover {
+          background-color: $tercary-color;
+          color: $secondary-color;
+          @include transition-ease;
+        }
+
+        &:active,
+        &:focus {
+          background-color: $tercary-color;
+          border-color: $secondary-color;
+        }
+      }
+    }
+
+    .job-card {
+      color: $text-primary;
+      font-family: $font-primary;
+      list-style-position: inside;
+
+      // @include media-sm {
+      //   overflow-y: scroll;
+      //   max-height: 90%;
+      // }
+
+      .job-header {
+        font-weight: 400;
+        font-size: 24px;
+        text-align: right;
+        align-items: right;
+      }
+
+      .job-company {
+        color: $secondary-color;
+        font-family: $font-secondary;
+      }
+
+      .job-date {
+        font-weight: 100;
+        text-align: right;
+        align-items: right;
+      }
+
+      .job-list {
+        font-weight: 300;
+        text-indent: -25px;
+        margin-left: 25px;
+      }
+
+      .job-list-item {
+        list-style-type: none;
+        margin-bottom: 10px;
+
+        &::before {
+          content: "»";
+          margin-right: 17px;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

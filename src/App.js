@@ -7,6 +7,7 @@ import "./_app.scss";
 //components
 import Welcome from "./components/Welcome/Welcome";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path="/my-portfolio" element={<Welcome />} />
         <Route path="/my-portfolio/about" element={<About />} />
+        <Route path="/my-portfolio/experience" element={<Experience />} />
       </Routes>
     </div>
   );

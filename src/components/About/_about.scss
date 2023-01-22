@@ -2,10 +2,18 @@
 
 .about-container {
   height: 100vh;
-  padding: 7vh 10vh;
+  padding: 8.5vh 10vh;
   overflow: hidden;
-  align-items: center;
+  align-items: left;
   text-align: left;
+
+  @include media-sm {
+    padding: 7vh 7vh;
+  }
+
+  @include media-md {
+    padding: 8vh 7vh;
+  }
 
   .about-header {
     padding-bottom: 2rem;
@@ -37,7 +45,21 @@
 
   .about-content {
     display: flex;
-    .about-inner {
+
+    @include media-sm {
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+      max-height: 80%;
+    }
+
+    @include media-md {
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+      max-height: 80%;
+    }
+    .paragraphs-container {
       padding-right: 5px;
 
       .about-paragraph {
@@ -77,74 +99,13 @@
       }
     }
     .profile-image {
-      padding: 0 10px;
+      border: 1px solid $tercary-color;
+      border-radius: 10%;
       height: 40vh;
 
-      box-shadow: 0px 0px 30px -15px #129b2e;
-
-      &:hover {
-        box-shadow: 0px 0px 30px -5px #129b2e;
-      }
-    }
-  }
-
-  @include media-sm {
-    .about-header {
-      padding-bottom: 0.5rem;
-      font-size: 18px;
-      letter-spacing: 0.5px;
-
-      &::before {
-        font-size: 14px;
-      }
-
-      &::after {
-        width: 120px;
-        margin: 2px;
-      }
-    }
-
-    .about-content {
-      .about-inner {
-        .about-paragraph {
-          font-size: 10px;
-          padding-bottom: 0.5rem;
-          letter-spacing: normal;
-        }
-        .stack-list {
-          gap: 0px 3px;
-          font-size: 10px;
-
-          li {
-            margin: 4px 0;
-
-            &::before {
-              padding-right: 5px;
-            }
-          }
-        }
-      }
-      .profile-image {
-        position: relative;
-        height: 15vh;
-        top: 450px;
-        right: 160px;
-      }
-    }
-  }
-
-  @include media-md {
-    .about-content {
-      .profile-image {
+      @include media-sm {
         height: 20vh;
-      }
-    }
-  }
-
-  @include media-lg {
-    .about-content {
-      .profile-image {
-        height: 25vh;
+        border-radius: 50%;
       }
     }
   }

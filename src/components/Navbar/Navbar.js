@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import "./_navbar.scss";
 import { TbLetterA } from "react-icons/tb";
 import { FiMenu } from "react-icons/fi";
-import { GrClose } from "react-icons/gr";
+import { AiOutlineClose } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
           <TbLetterA />
         </NavLink>
         <div className="menu-icon" onClick={handleClick}>
-          {click ? <GrClose /> : <FiMenu />}
+          {click ? <AiOutlineClose /> : <FiMenu />}
         </div>
         <ol className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-link-items">
@@ -43,7 +43,7 @@ const Navbar = () => {
           </li>
           <li className="nav-link-items">
             <NavLink
-              href="/my-portfolio"
+              to="/my-portfolio/experience"
               className="nav-link"
               onClick={handleCloseMobileMenu}
             >
@@ -56,7 +56,7 @@ const Navbar = () => {
               className="nav-link"
               onClick={handleCloseMobileMenu}
             >
-              Work
+              Projects
             </NavLink>
           </li>
           <li className="nav-link-items">

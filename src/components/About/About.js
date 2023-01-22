@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 
@@ -28,10 +27,10 @@ const About = () => {
       <div className="about-container">
         <h2 className="about-header">About Me</h2>
         <div className="about-content">
-          <div className="about-inner">
+          <div className="paragraphs-container">
             <p className="about-paragraph">
               Hi! My name is Adrie and I love coding and learning new things
-              every day. Even though I have a undergraduate degree in Economics
+              every day. Even though I have an undergraduate degree in Economics
               from the University of Louisville, I have always been driven
               towards computers and programming.
             </p>

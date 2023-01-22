@@ -17,3 +17,9 @@ body {
   width: 100%;
   min-height: 100%;
 }
+
+button {
+  font-family: $font-secondary;
+  font-weight: 100;
+  color: $text-primary;
+}

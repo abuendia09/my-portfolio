@@ -10,7 +10,7 @@ $font-primary: "Poppins", sans-serif;
 $font-secondary: "Roboto Mono", sans-serif;
 
 @mixin transition-ease {
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 @mixin media-sm {
   @media screen and (max-width: 480px) {
