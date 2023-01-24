@@ -8,6 +8,7 @@ import "./_app.scss";
 import Welcome from "./components/Welcome/Welcome";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/my-portfolio" element={<Welcome />} />
         <Route path="/my-portfolio/about" element={<About />} />
         <Route path="/my-portfolio/experience" element={<Experience />} />
+        <Route path="/my-portfolio/projects" element={<Projects />} />
       </Routes>
     </div>
   );

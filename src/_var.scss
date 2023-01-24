@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 
+//variables
 $primary-color: #111111;
 $secondary-color: #39ff14;
 $tercary-color: #222222;
@@ -9,9 +10,7 @@ $text-secondary: #39ff14;
 $font-primary: "Poppins", sans-serif;
 $font-secondary: "Roboto Mono", sans-serif;
 
-@mixin transition-ease {
-  transition: all 1s ease-in-out;
-}
+//media queries
 @mixin media-sm {
   @media screen and (max-width: 480px) {
     @content;

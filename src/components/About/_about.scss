@@ -1,9 +1,9 @@
 @import "../../var";
+@import "../../animations.scss";
 
 .about-container {
   height: 100vh;
   padding: 8.5vh 10vh;
-  overflow: hidden;
   align-items: left;
   text-align: left;
 
@@ -12,7 +12,7 @@
   }
 
   @include media-md {
-    padding: 8vh 7vh;
+    padding: 8vh 8vh;
   }
 
   .about-header {
@@ -36,10 +36,10 @@
     &::after {
       content: "";
       display: block;
-      width: 240px;
+      width: 245px;
       height: 1px;
-      margin: 5px;
       background-color: $secondary-color;
+      cursor: pointer;
     }
   }
 
@@ -49,15 +49,11 @@
     @include media-sm {
       justify-content: center;
       flex-wrap: wrap;
-      overflow-y: scroll;
-      max-height: 80%;
     }
 
     @include media-md {
       justify-content: center;
       flex-wrap: wrap;
-      overflow-y: scroll;
-      max-height: 80%;
     }
     .paragraphs-container {
       padding-right: 5px;
@@ -102,10 +98,16 @@
       border: 1px solid $tercary-color;
       border-radius: 10%;
       height: 40vh;
+      @include fade-in-shadow;
 
       @include media-sm {
+        margin-top: 20px;
         height: 20vh;
-        border-radius: 50%;
+      }
+
+      @include media-md {
+        margin-top: 20px;
+        height: 25vh;
       }
     }
   }

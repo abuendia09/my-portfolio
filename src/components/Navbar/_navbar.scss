@@ -1,9 +1,5 @@
 @import "../../var";
-
-// .navbar-container.active {
-//   // background-color: transparent;
-//   @include transition-ease;
-// }
+@import "../../animations.scss";
 
 .navbar-container {
   position: fixed;
@@ -14,7 +10,8 @@
   display: flex;
   justify-content: space-between;
   z-index: 1;
-  padding: 0 2rem;
+  padding: 0 1rem;
+  background-color: transparent;
 
   .navbar-logo {
     color: $secondary-color;
@@ -29,6 +26,7 @@
     padding-right: 5px;
 
     &:hover {
+      @include jello-horizontal;
       background: $tercary-color;
     }
   }
@@ -94,7 +92,7 @@
       right: 0;
       opacity: 1;
       @include transition-ease;
-      z-index: 2;
+      z-index: 10;
 
       .nav-link-items {
         padding: 2rem 0;

@@ -1,0 +1,132 @@
+@import "../../var";
+@import "../../animations.scss";
+
+.projects-container {
+  height: 100vh;
+  padding: 8.5vh 10vh;
+
+  @include media-sm {
+    padding: 7vh 8vh;
+  }
+
+  @include media-md {
+    padding: 8vh 7vh;
+  }
+  .projects-header {
+    padding-bottom: 2rem;
+    font-size: 36px;
+    font-family: $font-primary;
+    color: $text-primary;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    align-items: left;
+
+    &::before {
+      counter-increment: section 3;
+      content: "0" counter(section) ".";
+      font-family: $font-secondary;
+      color: $secondary-color;
+      font-size: 27px;
+      letter-spacing: -0.05em;
+      padding-right: 0.5em;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 215px;
+      height: 1px;
+      background-color: $secondary-color;
+    }
+  }
+
+  .project-item {
+    padding-bottom: 30%;
+
+    .project-name {
+      color: $secondary-color;
+      font-family: $font-secondary;
+      font-weight: 300;
+      text-align: right;
+      padding-bottom: 10px;
+    }
+
+    .project-content {
+      display: flex;
+      flex-wrap: nowrap;
+      height: auto;
+      width: 100%;
+
+      @include media-sm {
+        flex-wrap: wrap;
+      }
+
+      @include media-md {
+        flex-wrap: wrap;
+      }
+      img {
+        opacity: 0.3;
+        position: relative;
+        z-index: 1;
+        height: auto;
+        width: 50%;
+        border-radius: 10px;
+
+        &:hover {
+          @include transition-ease;
+          transform: scale(1.1);
+          opacity: 1;
+        }
+
+        @include media-md {
+          width: 100%;
+        }
+      }
+
+      .project-description {
+        background-color: $tercary-color;
+        height: auto;
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        color: $text-primary;
+        font-family: $font-primary;
+        font-weight: 300;
+        text-align: right;
+
+        &:hover {
+          @include transition-ease;
+          transform: scale(1.1);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+            0.3em 0.3em 1em #5a5a5a;
+        }
+
+        @include media-sm {
+          width: auto;
+        }
+      }
+    }
+    .project-stack {
+      h3 {
+        color: $text-primary;
+        font-family: $font-secondary;
+        font-weight: 100;
+        font-size: 16px;
+        padding-top: 15px;
+        text-align: right;
+      }
+
+      .github-icon {
+        margin-top: 15px;
+        color: $text-primary;
+        float: right;
+
+        &:hover {
+          color: $secondary-color;
+          @include transition-ease;
+        }
+      }
+    }
+  }
+}

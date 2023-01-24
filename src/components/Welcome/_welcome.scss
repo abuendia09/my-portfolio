@@ -1,4 +1,5 @@
 @import "../../var";
+@import "../../animations.scss";
 
 .welcome-container {
   height: 100vh;
@@ -6,6 +7,7 @@
   overflow: hidden;
   align-items: center;
   text-align: left;
+  @include fade-in(2s);
 
   .welcome-header {
     font-family: $font-secondary;

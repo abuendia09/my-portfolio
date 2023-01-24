@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
           <li className="nav-link-items">
             <NavLink
-              href="/my-portfolio"
+              to="/my-portfolio/projects"
               className="nav-link"
               onClick={handleCloseMobileMenu}
             >
