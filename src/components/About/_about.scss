@@ -8,7 +8,7 @@
   text-align: left;
 
   @include media-sm {
-    padding: 7vh 7vh;
+    padding: 7vh 8vh;
   }
 
   @include media-md {
@@ -22,6 +22,7 @@
     color: $text-primary;
     font-weight: 400;
     letter-spacing: 2px;
+    @include fade-in(2s);
 
     &::before {
       counter-increment: section 1;
@@ -57,6 +58,7 @@
     }
     .paragraphs-container {
       padding-right: 5px;
+      @include fade-in(3s);
 
       .about-paragraph {
         color: $text-primary;

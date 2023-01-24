@@ -21,6 +21,7 @@
     letter-spacing: 2px;
     text-align: left;
     align-items: left;
+    @include fade-in(1s);
 
     &::before {
       counter-increment: section 3;
@@ -50,6 +51,7 @@
       font-weight: 300;
       text-align: right;
       padding-bottom: 10px;
+      @include fade-in(1s);
     }
 
     .project-content {
@@ -66,65 +68,56 @@
         flex-wrap: wrap;
       }
       img {
-        opacity: 0.3;
         position: relative;
-        z-index: 1;
         height: auto;
         width: 50%;
-        border-radius: 10px;
+        @include slide-down-blur;
 
-        &:hover {
-          @include transition-ease;
-          transform: scale(1.1);
-          opacity: 1;
+        @include media-sm {
+          width: inherit;
+          padding-bottom: 10px;
         }
 
         @include media-md {
+          padding-bottom: 10px;
           width: 100%;
         }
       }
 
       .project-description {
-        background-color: $tercary-color;
         height: auto;
         width: 100%;
         padding: 30px;
-        border-radius: 10px;
         color: $text-primary;
         font-family: $font-primary;
         font-weight: 300;
         text-align: right;
 
-        &:hover {
-          @include transition-ease;
-          transform: scale(1.1);
-          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-            0.3em 0.3em 1em #5a5a5a;
-        }
-
-        @include media-sm {
-          width: auto;
-        }
+        @include slide-in-blur-bottom;
       }
     }
     .project-stack {
       h3 {
-        color: $text-primary;
+        color: $secondary-color;
         font-family: $font-secondary;
         font-weight: 100;
         font-size: 16px;
         padding-top: 15px;
         text-align: right;
+        @include fade-in(1s);
       }
 
-      .github-icon {
-        margin-top: 15px;
+      .link-icon {
+        margin: 15px;
         color: $text-primary;
         float: right;
+        height: 20px;
+        width: 20px;
+        @include fade-in(1s);
 
         &:hover {
           color: $secondary-color;
-          @include transition-ease;
+          @include jello-horizontal;
         }
       }
     }

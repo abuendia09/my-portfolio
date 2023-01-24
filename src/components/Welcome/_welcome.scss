@@ -4,7 +4,6 @@
 .welcome-container {
   height: 100vh;
   padding: 10vh 12vh;
-  overflow: hidden;
   align-items: center;
   text-align: left;
   @include fade-in(2s);
@@ -26,9 +25,6 @@
   }
 
   .paragraph-container {
-    max-height: 40vh;
-    overflow-y: auto;
-
     .welcome-paragraph {
       font-family: $font-primary;
       color: $text-primary;

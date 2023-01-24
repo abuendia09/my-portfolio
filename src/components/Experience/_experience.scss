@@ -4,7 +4,6 @@
 .experience-container {
   height: 100vh;
   padding: 8.5vh 10vh;
-  overflow: hidden;
 
   @include media-sm {
     padding: 7vh 8vh;
@@ -23,6 +22,7 @@
     letter-spacing: 2px;
     text-align: left;
     align-items: left;
+    @include fade-in(2s);
 
     &::before {
       counter-increment: section 2;
@@ -65,6 +65,7 @@
         width: 150px;
         display: block;
         cursor: pointer;
+        @include slide-in-left;
 
         @include media-sm {
           border-style: none none solid none;
@@ -89,11 +90,16 @@
       color: $text-primary;
       font-family: $font-primary;
       list-style-position: inside;
+      @include slide-in-blurred-right;
 
-      // @include media-sm {
-      //   overflow-y: scroll;
-      //   max-height: 90%;
-      // }
+      @include media-sm {
+        flex-wrap: wrap;
+        @include fade-in(2s);
+      }
+      @include media-md {
+        flex-wrap: wrap;
+        @include fade-in(2s);
+      }
 
       .job-header {
         font-weight: 300;
