@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.e0c71186.css",
+    "main.css": "/my-portfolio/static/css/main.27f8cb02.css",
     "main.js": "/my-portfolio/static/js/main.416c584c.js",
     "static/media/musicality-img.png": "/my-portfolio/static/media/musicality-img.88cbf7cce066054826f5.png",
     "static/media/total-football-img.png": "/my-portfolio/static/media/total-football-img.4146affbf6ff9f506bfd.png",
     "static/media/image0.jpeg": "/my-portfolio/static/media/image0.0bc84bf8cd8ea261a6fc.jpeg",
     "index.html": "/my-portfolio/index.html",
-    "main.e0c71186.css.map": "/my-portfolio/static/css/main.e0c71186.css.map",
+    "main.27f8cb02.css.map": "/my-portfolio/static/css/main.27f8cb02.css.map",
     "main.416c584c.js.map": "/my-portfolio/static/js/main.416c584c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0c71186.css",
+    "static/css/main.27f8cb02.css",
     "static/js/main.416c584c.js"
   ]
 }
