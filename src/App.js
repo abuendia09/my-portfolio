@@ -9,6 +9,7 @@ import Welcome from "./components/Welcome/Welcome";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/my-portfolio/about" element={<About />} />
         <Route path="/my-portfolio/experience" element={<Experience />} />
         <Route path="/my-portfolio/projects" element={<Projects />} />
+        <Route path="/my-portfolio/contact" element={<Contact />} />
       </Routes>
     </div>
   );

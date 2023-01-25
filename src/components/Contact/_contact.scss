@@ -1,0 +1,71 @@
+@import "../../var";
+@import "../../animations.scss";
+
+.contact-container {
+  height: 100vh;
+  padding: 8.5vh 10vh;
+  align-items: left;
+  text-align: left;
+
+  @include media-sm {
+    padding: 7vh 8vh;
+  }
+
+  @include media-md {
+    padding: 8vh 8vh;
+  }
+
+  .contact-header {
+    padding-bottom: 2rem;
+    font-size: 36px;
+    font-family: $font-primary;
+    color: $text-primary;
+    font-weight: 400;
+    letter-spacing: 2px;
+    @include fade-in(2s);
+
+    &::before {
+      counter-increment: section 4;
+      content: "0" counter(section) ".";
+      font-family: $font-secondary;
+      color: $secondary-color;
+      font-size: 27px;
+      letter-spacing: -0.05em;
+      padding-right: 0.5em;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 220px;
+      height: 1px;
+      background-color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+
+  .contact-content {
+    text-align: center;
+    justify-content: center;
+
+    .contact-paragraph {
+      font-family: $font-primary;
+      font-weight: 300;
+      color: $text-primary;
+      padding: 40px 70px;
+      @include swirl-in-fwd;
+    }
+    .email-link {
+      .email-icon {
+        color: $secondary-color;
+        height: 50px;
+        width: 50px;
+        // @include fade-in(2s);
+
+        &:hover {
+          @include jello-horizontal;
+        }
+      }
+    }
+  }
+}
