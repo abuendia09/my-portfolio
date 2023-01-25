@@ -2,11 +2,18 @@
 @import "../../animations.scss";
 
 .welcome-container {
-  height: 100vh;
+  height: 100%;
   padding: 10vh 12vh;
   align-items: center;
   text-align: left;
   @include fade-in(2s);
+
+  @include media-lg {
+    zoom: 125%;
+  }
+  @include media-xl {
+    zoom: 150%;
+  }
 
   .welcome-header {
     font-family: $font-secondary;

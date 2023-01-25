@@ -2,7 +2,7 @@
 @import "../../animations.scss";
 
 .experience-container {
-  height: 100vh;
+  height: 100%;
   padding: 8.5vh 10vh;
 
   @include media-sm {
@@ -11,6 +11,13 @@
 
   @include media-md {
     padding: 8vh 7vh;
+  }
+
+  @include media-lg {
+    zoom: 125%;
+  }
+  @include media-xl {
+    zoom: 150%;
   }
 
   .experience-header {

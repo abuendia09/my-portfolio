@@ -99,7 +99,7 @@
     .profile-image {
       border: 1px solid $tercary-color;
       border-radius: 10%;
-      height: 40vh;
+      height: 30vh;
       @include fade-in-shadow;
 
       @include media-sm {
