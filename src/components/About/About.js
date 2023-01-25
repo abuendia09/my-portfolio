@@ -41,8 +41,8 @@ const About = () => {
             </p>
 
             <p className="about-paragraph">
-              I've always had love and passion for computers and programming. So
-              in 2022, I decided to make a career change. I joined
+              I've always had a certain passion for computers and programming.
+              So in 2022, I decided to make a career change. I joined
               <a href="https://devmountain.com/" target="_blank">
                 &nbsp;DevMountain&nbsp;
               </a>
