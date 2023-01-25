@@ -2,7 +2,7 @@
 @import "../../animations.scss";
 
 .contact-container {
-  height: 100vh;
+  height: 100%;
   padding: 8.5vh 10vh;
   align-items: left;
   text-align: left;
@@ -13,6 +13,13 @@
 
   @include media-md {
     padding: 8vh 8vh;
+    zoom: 100%;
+  }
+  @include media-lg {
+    zoom: 150%;
+  }
+  @include media-xl {
+    zoom: 150%;
   }
 
   .contact-header {
