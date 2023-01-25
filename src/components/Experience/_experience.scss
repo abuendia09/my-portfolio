@@ -90,10 +90,10 @@
       color: $text-primary;
       font-family: $font-primary;
       list-style-position: inside;
-      background: linear-gradient(to left, $primary-color, $tercary-color);
       @include fade-in(1s);
 
       @include media-sm {
+        padding-top: 10px;
         flex-wrap: wrap;
       }
       @include media-md {
