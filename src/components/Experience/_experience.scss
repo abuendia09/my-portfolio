@@ -90,6 +90,7 @@
       color: $text-primary;
       font-family: $font-primary;
       list-style-position: inside;
+      background: linear-gradient(to left, $primary-color, $tercary-color);
       @include slide-in-blurred-right;
 
       @include media-sm {

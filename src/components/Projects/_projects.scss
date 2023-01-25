@@ -59,6 +59,8 @@
       flex-wrap: nowrap;
       height: auto;
       width: 100%;
+      border-radius: 10px;
+      background: linear-gradient(to right, $primary-color, $tercary-color);
 
       @include media-sm {
         flex-wrap: wrap;
@@ -68,30 +70,31 @@
         flex-wrap: wrap;
       }
       img {
-        position: relative;
-        height: auto;
+        margin: auto;
+        height: 50%;
         width: 50%;
         @include slide-down-blur;
 
         @include media-sm {
-          width: inherit;
+          // width: 50%;
+          // height: 50%;
           padding-bottom: 10px;
         }
 
         @include media-md {
           padding-bottom: 10px;
-          width: 100%;
+          width: 70%;
         }
       }
 
       .project-description {
         height: auto;
         width: 100%;
-        padding: 30px;
+        padding: 0 0 10px 10px;
         color: $text-primary;
         font-family: $font-primary;
         font-weight: 300;
-        text-align: right;
+        text-align: left;
 
         @include slide-in-blur-bottom;
       }
