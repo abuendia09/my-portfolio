@@ -43,7 +43,11 @@ const About = () => {
             <p className="about-paragraph">
               I've always had a certain passion for computers and programming.
               So in 2022, I decided to make a career change. I joined
-              <a href="https://devmountain.com/" target="_blank">
+              <a
+                href="https://devmountain.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 &nbsp;DevMountain&nbsp;
               </a>
               and became a student in their part time cohort focusing on Full
