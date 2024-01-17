@@ -30,19 +30,22 @@ const About = () => {
         <div className="about-content">
           <div className="paragraphs-container">
             <p className="about-paragraph">
-              Hi! My name is Adrie Buendia and welcome to my page. Born on July
-              9th, 1990 in Panama city, Panama. My family was military and we
-              were stationed in Panama. After the military based closed down, my
-              family loved it so much they decided to stay.
+              Hello! I'm Adrie Buendia, and I'm delighted to have you on my
+              page. Born on July 9th, 1990, in Panama City, Panama, my family's
+              military background initially brought us to Panama. Falling in
+              love with the country, we decided to stay even after the military
+              base closed down.
             </p>
             <p className="about-paragraph">
-              In 2013, I moved to Louisville, KY to pursue my undergraduate
+              In 2013, I relocated to Louisville, KY, to pursue my undergraduate
               degree in Economics at the University of Louisville.
             </p>
 
             <p className="about-paragraph">
-              I've always had a certain passion for computers and programming.
-              So in 2022, I decided to make a career change. I joined
+              My journey took an exciting turn when I discovered my passion for
+              computers and programming. In 2022, driven by this passion, I
+              decided to embark on a career change. Despite working 60 hours a
+              week, I joined
               <a
                 href="https://devmountain.com/"
                 target="_blank"
@@ -50,13 +53,22 @@ const About = () => {
               >
                 &nbsp;DevMountain&nbsp;
               </a>
-              and became a student in their part time cohort focusing on Full
-              Stack Web Development. All while I still worked 60 hours a week.
+              as a student in their part-time cohort, focusing on Full Stack Web
+              Development.
             </p>
             <p className="about-paragraph">
-              Today, I live in Florida and I'm focusing on improving my current
-              skills and learning new ones as I search for a job that would
-              allow me to break into the tech world.
+              Fast forward to August 2023, where, having demonstrated my coding
+              proficiency, I secured a spot in a prestigious bootcamp. This
+              immersive experience was instrumental in refining my skills,
+              gaining valuable insights, and deepening my understanding of
+              coding. The bootcamp played a pivotal role in my ongoing evolution
+              as a developer.
+            </p>
+            <p className="about-paragraph">
+              Today, I call Florida home, where I am dedicated to honing my
+              existing skills and acquiring new ones. I am actively seeking
+              opportunities that will enable me to make my mark in the tech
+              world.
             </p>
             <p className="about-paragraph">Current stack:</p>
             <ul className="stack-list">
