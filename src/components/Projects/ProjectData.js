@@ -12,12 +12,12 @@ export default [
   ],
   [
     {
-      project: "Musicality",
-      stack: "Javascript | NodeJS | Express | HTML5 | CSS3",
+      project: "Pokemon Battle",
+      stack: "ReactJS | JAVA | Spring boot | HTML5 | CSS3 | MySQL",
       description:
-        "My first project ever, developed a simple app which allows users to add and delete songs in a playlist. Built Full-CRUD RESTful API with Express and Node.js. Developed modern reactive UI with ES6+ JS, HTML5, and CSS",
-      image: require("../../assets/musicality-img.png"),
-      github: "https://www.github.com/abuendia09/pt4-capstone",
+        "Inspired by my passion for gaming and the complexity that comes with it. The Pokémon Battle Game is a web-based application where users can select a Pokémon and battle against a computer-controlled opponent. The game is built using React for the frontend, incorporating React Router for navigation, Java with Spring boot for the backend and MySQL for the database. The application features dynamic rendering of Pokémon details, interactive battle buttons, and a real-time battle log to track the progress of the game. Pokémon data is managed using React's state hooks. The game provides an engaging and interactive experience, allowing users to battle against the computer with a chance to win or lose based on strategic choices.",
+      image: require("../../assets/pokemon-background.jpeg"),
+      github: "https://github.com/abuendia09/pokemon-battle-capstone",
     },
   ],
 ];
